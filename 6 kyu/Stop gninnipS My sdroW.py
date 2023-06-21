@@ -9,4 +9,4 @@ def spin_words(sentence):
         else:
             answer += word + ' '
             
-    return answer[0:-1]
+    return answer[:-1]
