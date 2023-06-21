@@ -14,4 +14,4 @@ def get_strings(city):
     for char in count_char:
         answer += f'{char}:{count_char[char]},'
     
-    return answer[0:-1]
+    return answer[:-1]
