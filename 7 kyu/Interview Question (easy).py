@@ -10,7 +10,6 @@ def get_strings(city):
             if char != ' ':  # чтобы не записывало пробелы
                 count_char[char] = '*'
             
-    # преобразование в одну строку
     answer = ''
     for char in count_char:
         answer += f'{char}:{count_char[char]},'
