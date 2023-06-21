@@ -1,14 +1,12 @@
 # https://www.codewars.com/kata/5264d2b162488dc400000001
 
 def spin_words(sentence):
-    words = sentence.split()
-    final_sentence = ''
+    answer = ''
     
-    for word in words:
+    for word in sentence.split():
         if len(word) >= 5:
-            final_sentence += word[::-1] + ' '
+            answer += word[::-1] + ' '
         else:
-            final_sentence += word + ' '
+            answer += word + ' '
             
-    
-    return final_sentence[0:-1]  # строка без пробела в конце
+    return answer[0:-1]
