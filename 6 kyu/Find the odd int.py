@@ -1,14 +1,14 @@
 # https://www.codewars.com/kata/54da5a58ea159efa38000836
 
 def find_it(seq):
-    count_num = {}
+    cout_num = {}
     
     for num in seq:
-        if num in count_num:
-            count_num[num] += 1
+        if num in cout_num:
+            cout_num[num] += 1
         else:
-            count_num[num] = 1
-    
-    for key, value in count_num.items():
-        if value % 2 != 0:
-            return key
+            cout_num[num] = 1
+            
+    for num, cout in cout_num.items():
+        if cout % 2 != 0:
+            return num
